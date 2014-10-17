@@ -6,10 +6,6 @@ repositories {
 
 
 task initProject () << {
-	if (hasProperty(initPlugins)) {
-		initPlugins.split(',').each { plug -> project.apply { plugin(plug.trim()) } }
-	}	
-
 	project.sourceSets*.allSource.srcDirTrees.flatten().dir.each { dir ->
 			dir.mkdirs()
 	}
