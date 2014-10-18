@@ -7,7 +7,7 @@ for ( i in 3..max-1 ) {
     	println 'Multiple of 3 :'+i
     	isMultiple = true
     }
-    if ((i%5) == 0){
+    else if ((i%5) == 0){
     	println 'Multiple of 5 :'+i
     	isMultiple = true
     }
